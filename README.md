@@ -1,1 +1,1 @@
-# xibit-halloween.github.io
+# xibit halloween mobile AR experience

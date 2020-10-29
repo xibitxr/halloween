@@ -25,6 +25,7 @@
 <!-- rawgithack development URL -->
 <script src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js'></script>
 
+
 <body style='margin : 0px; overflow: hidden;'>
    <!-- minimal loader shown until image descriptors are loaded -->
   <div class="arjs-loader">
@@ -51,16 +52,12 @@
         renderer="logarithmicDepthBuffer: true;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
-        <a-assets>
-          <a-asset-item id='pumpkin-obj' src='assets/3D/pumpkin.obj'></a-asset-item>
-          <a-asset-item id='pumpkin-mtl' src='assets/3D/pumpkin.mtl'></a-asset-item>
-        </a-assets>
         <!-- use rawgithack to retrieve the correct url for nft marker (see 'pinball' below) -->
         <a-nft
             type='nft' url='halloween/assets/example/audi'
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='6'>
 
-            <a-entity obj-model="obj: #pumpkin-obj; mtl: #pumpkin-mtl" scale = "1 1 1" position = "0 0 0">
+            <a-entity obj-model='obj: url(assets/3D/pumpkin.obj); mtl: url(assets/3D/pumpkin.mtl)' position='0 0 0'>
             </a-entity>
             <!-- <a-entity
                 gltf-model='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf'

@@ -31,6 +31,20 @@
     <div>Loading, please wait...</div>
   </div>
 
+  <div style="
+    position: absolute;
+    text-align: center;
+    bottom: 5px;
+    width: 100%;
+    z-index: 10;
+    color: white;
+    font-family: 'Nunito', monospace;
+    font-size: 5vw;
+    text-shadow: 0px 0px 5px black;
+    pointer-events: none;">
+  <h3 id="prompt">Made with Love by Xibit</h3>
+  </div>
+
 
     <a-scene
         vr-mode-ui='enabled: false;'
@@ -39,7 +53,7 @@
 
         <!-- use rawgithack to retrieve the correct url for nft marker (see 'pinball' below) -->
         <a-nft
-            type='nft' url='halloween/assets/img/audi'
+            type='nft' url='halloween/assets/example/audi'
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='6'>
             <a-entity
                 gltf-model='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf'
